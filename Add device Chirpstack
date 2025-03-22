@@ -1,1 +1,96 @@
-Add device Chirpstack
+Add device Chirpstack_Aduino_Sensor code
+
+#include <Wire.h>
+#include <Adafruit_Sensor.h>
+#include <Adafruit_BME280.h>
+#include <Adafruit_INA219.h>
+#include <lmic.h>
+#include <hal/hal.h>
+#include <SPI.h>
+#define SOIL_MOISTURE_ANALOG_PIN 34  
+// สร้างอ็อบเจกต์สำหรับเซ็นเซอร์
+Adafruit_BME280 bme; // สำหรับ BME280
+Adafruit_INA219 ina219; // สำหรับ INA219
+
+// กำหนดค่า Pin mapping ของ LoRa
+const lmic_pinmap lmic_pins = {
+    .nss = 5,
+    .rxtx = LMIC_UNUSED_PIN,
+    .rst = 27,
+    .dio = {26, 33, 32},
+};
+
+// ข้อมูล LoRaWAN (DevEUI, AppEUI, AppKey)
+static const u1_t PROGMEM APPEUI[8]={ 0xEE, 0x51, 0x60, 0xA1, 0x76, 0x26, 0x2E, 0xA2 };
+static const u1_t PROGMEM DEVEUI[8]={ 0xDD, 0x20, 0xD0, 0x63, 0x2A, 0xCB, 0x78, 0xAF };
+static const u1_t PROGMEM APPKEY[16] = { 0xD2, 0x5E, 0xDF, 0xF4, 0xEB, 0xBC, 0xA4, 0xE6, 0x4E, 0xBD, 0x41, 0x64, 0x40, 0x6A, 0xD4, 0xD1 };
+
+void os_getArtEui (u1_t* buf) { memcpy_P(buf, APPEUI, 8); }
+void os_getDevEui (u1_t* buf) { memcpy_P(buf, DEVEUI, 8); }
+void os_getDevKey (u1_t* buf) { memcpy_P(buf, APPKEY, 16); }
+
+static osjob_t sendjob;
+const unsigned TX_INTERVAL = 10;
+
+void setup() {
+    Serial.begin(115200);
+    Serial.println(F("Starting"));
+
+    // เริ่มต้นเซ็นเซอร์ BME280
+    if (!bme.begin(0x76)) { // I2C Address ของ BME280
+        Serial.println(F("Could not find a valid BME280 sensor, check wiring!"));
+        while (1);
+    }
+
+    // เริ่มต้นเซ็นเซอร์ INA219
+    if (!ina219.begin()) { // ใช้ Address เริ่มต้น 0x40
+        Serial.println(F("Could not find INA219 sensor, check wiring!"));
+        while (1);
+    }
+
+    // เริ่มต้น LMIC
+    os_init();
+    LMIC_reset();
+    LMIC_setDrTxpow(DR_SF9, 20);
+    // เริ่มการส่งข้อมูลครั้งแรก
+    do_send(&sendjob);
+}
+
+void loop() {
+    os_runloop_once();
+}
+
+void do_send(osjob_t* j) {
+    // ตรวจสอบสถานะการส่งข้อมูล
+    if (LMIC.opmode & OP_TXRXPEND) {
+        Serial.println(F("OP_TXRXPEND, not sending"));
+    } else {
+        // อ่านข้อมูลจาก BME280
+        float temperature = bme.readTemperature();
+        float humidity = bme.readHumidity();
+
+        // อ่านข้อมูลจาก INA219
+        float busVoltage = ina219.getBusVoltage_V();
+        float current_mA = ina219.getCurrent_mA();
+        float loadVoltage = busVoltage + (ina219.getShuntVoltage_mV() / 1000.0);
+
+       
+        int analogValue = analogRead(SOIL_MOISTURE_ANALOG_PIN);
+        int soilMoisturePercent = map(analogValue, 4095, 0, 0, 100);
+        
+
+        // สร้าง payload
+        char payload[128];
+        snprintf(payload, sizeof(payload), "T:%.2f,H:%.2f,V:%.2f,I:%.2f,S:%.2f", temperature, humidity, loadVoltage, current_mA, soilMoisturePercent);
+
+        // ส่งข้อมูลผ่าน LoRa
+        LMIC_setTxData2(1, (uint8_t*)payload, strlen(payload), 0);
+        Serial.print(F("Packet queued: "));
+        Serial.println(payload);
+    }
+
+    // กำหนดเวลาส่งข้อมูลครั้งถัดไป
+    os_setTimedCallback(&sendjob, os_getTime() + sec2osticks(TX_INTERVAL), do_send);
+}
+
+ 
