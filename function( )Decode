@@ -1,0 +1,43 @@
+function( )Decode chirpstack
+on chirpstack-> deviceprofiletemplate -> codes -> javascriptfunction
+code:
+function decodeUplink(input) {
+    try {
+        // แปลงข้อมูล Base64 payload
+        var payloadString = String.fromCharCode.apply(null, input.bytes);
+
+        // แยกข้อมูลที่ส่งมา
+        var parts = payloadString.split(',');
+
+        var temperature = parseFloat(parts[0].split(':')[1]);
+        var humidity = parseFloat(parts[1].split(':')[1]);
+        var voltage = parseFloat(parts[2].split(':')[1]);
+        var current = parseFloat(parts[3].split(':')[1]);
+        var soilMoisture = parseFloat(parts[4].split(':')[1]);
+
+        // แปลงความชื้นในดินเป็นเปอร์เซ็นต์
+        var soilMoisturePercent = (soilMoisture / 1023.0) * 100;
+        soilMoisturePercent = parseFloat(soilMoisturePercent.toFixed(2));
+
+        // ตรวจสอบความถูกต้องของข้อมูล
+        if (isNaN(temperature) || isNaN(humidity) || isNaN(voltage) || isNaN(current) || isNaN(soilMoisturePercent)) {
+            throw new Error("Invalid data format");
+        }
+
+        // สร้างข้อมูลเพื่อส่งไปยัง Blynk
+        return {
+            data: {
+                V1: temperature,         // อุณหภูมิ
+                V2: humidity,            // ความชื้น
+                V3: voltage,             // แรงดันไฟฟ้า
+                V4: current,             // กระแสไฟฟ้า
+                V5: soilMoisturePercent  // ความชื้นในดิน
+            }
+        };
+    } catch (error) {
+        // กรณีเกิดข้อผิดพลาด
+        return {
+            errors: [error.message]
+        };
+    }
+}
