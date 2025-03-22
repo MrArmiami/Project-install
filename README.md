@@ -1,4 +1,4 @@
-# Project-install
+# Project-install-chirpstack
 LORA-BASED ENVIRONMENTAL SURVEILLANCE SYSTEM FOR DURIAN ORCHARDS
 
 
