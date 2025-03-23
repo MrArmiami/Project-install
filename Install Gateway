@@ -1,4 +1,4 @@
-Install Gateway file [name] = globalconfig.jason
+Install Gateway file [name] = global.config.jason
 Link code:
 pi4gw@raspberrypi:~/sx1302_hal/packet_forwarder $ cat AS923
 {
