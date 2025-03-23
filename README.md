@@ -8,8 +8,12 @@ Data Flow Diagram this project
 
 Display Web Blynk
 
+<div align="center">
+  <img src="https://github.com/MrArmiami/Project-install/blob/main/webblynk.jpg?raw=true" alt="Display Web Blynk" width="600" height="900">
+</div>
 
-<img src="https://github.com/MrArmiami/Project-install/blob/main/webblynk.jpg?raw=true" alt="Display Web Blynk" width="600" height="900">
-<img src="https://github.com/MrArmiami/Project-install/blob/main/webblynk2.jpg?raw=true" alt="Display Web Blynk" width="600" height="900">
+<div align="center">
+ <img src="https://github.com/MrArmiami/Project-install/blob/main/webblynk2.jpg?raw=true" alt="Display Web Blynk" width="600" height="900">
+</div>
 
-https://github.com/MrArmiami/Project-install/blob/main/webblynk2.jpg?raw=true
+
