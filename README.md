@@ -6,7 +6,7 @@ Data Flow Diagram this project
 
 
 
-Display Web Blynk
+Display App Blynk
 
 <div align="center">
   <img src="https://github.com/MrArmiami/Project-install/blob/main/webblynk.jpg?raw=true" alt="Display Web Blynk" width="600" height="900">
