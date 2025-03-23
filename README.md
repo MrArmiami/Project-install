@@ -1,5 +1,6 @@
 # Project-LORA-BASED ENVIRONMENTAL SURVEILLANCE SYSTEM FOR DURIAN ORCHARDS
-
+A LoRa-based environmental monitoring system for durian orchards.  
+Using ChirpStack, ESP32, and SX1276 for data transmission.
 <h2>Data Flow Diagram this project</h2>
 <br>
 
