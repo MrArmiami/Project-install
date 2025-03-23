@@ -39,12 +39,12 @@ Chirpstack Ui Web interface
 
 <br>
 <div align="center">
-  <img src="https://github.com/MrArmiami/Project-install/blob/main/images/chripstack%20ui%20web%20interface2.png?raw=true" alt="Display Web Blynk" width="1200" height="700">
+  <img src="https://github.com/MrArmiami/Project-install/blob/main/images/chripstack%20ui%20web%20interface2.png?raw=true" alt="Display Web Blynk" width="1200" height="600">
 </div>
 
 <br>
 <div align="center">
- <img src="https://github.com/MrArmiami/Project-install/blob/main/images/chripstack%20ui%20web%20interface3.png?raw=true" alt="Display Web Blynk" width="1200" height="700">
+ <img src="https://github.com/MrArmiami/Project-install/blob/main/images/chripstack%20ui%20web%20interface3.png?raw=true" alt="Display Web Blynk" width="1200" height="600">
 </div>
 <br>
 
