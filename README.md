@@ -25,11 +25,11 @@ Display Web Blynk
 
 <br>
 <div align="center">
-  <img src="https://github.com/MrArmiami/Project-install/blob/main/images/displayWebBlynk.png?raw=true" alt="Display Web Blynk" width="1200" height="900">
+  <img src="https://github.com/MrArmiami/Project-install/blob/main/images/displayWebBlynk.png?raw=true" alt="Display Web Blynk" width="1200" height="700">
 </div>
 
 <br>
 <div align="center">
- <img src="https://raw.githubusercontent.com/MrArmiami/Project-install/9efc737eff8a6919b1b0cdc452ff347d10337cb6/images/displayWebBlynk2.png.svg" alt="Display Web Blynk" width="1200" height="900">
+ <img src="https://raw.githubusercontent.com/MrArmiami/Project-install/9efc737eff8a6919b1b0cdc452ff347d10337cb6/images/displayWebBlynk2.png.svg" alt="Display Web Blynk" width="1200" height="700">
 </div>
 <br>
