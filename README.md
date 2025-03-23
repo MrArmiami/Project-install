@@ -1,6 +1,6 @@
 # Project-LORA-BASED ENVIRONMENTAL SURVEILLANCE SYSTEM FOR DURIAN ORCHARDS
 
-Data Flow Diagram this project
+<h2>Data Flow Diagram this project</h2>
 <br>
 
 <img src="https://github.com/MrArmiami/Project-install/blob/main/images/dataflowdiagram.jpg?raw=true" alt="Display Web Blynk" width="1200" height="400">
