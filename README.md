@@ -8,28 +8,30 @@
 
 <br>
 
-installation in durian orchard
+<h2>installation in durian orchard</h2>
 <br>
 <div align="center">
 <br>
-Gateway
+<h3>Gateway</h3>
   <img src="https://github.com/MrArmiami/Project-install/blob/main/images/Gateway.jpg?raw=true" alt="Gateway" width="1200" height="600">
 </div>
 <br>
 <div align="center">
 <br>
-LoRa Node 
+<h3>LoRa Node </h3>
+
   <img src="https://github.com/MrArmiami/Project-install/blob/main/images/loranode.jpg?raw=true" alt="LoRa Node " width="1200" height="600">
 </div>
 
 
 <br>
-Display App Blynk
+<h2>Display App Blynk</h2>
+
 
 <br>
 <div align="center">
 <br>
-  <img src="https://github.com/MrArmiami/Project-install/blob/main/images/webblynk.jpg?raw=true" alt=Display App Blynk" width="600" height="900">
+  <img src="https://github.com/MrArmiami/Project-install/blob/main/images/webblynk.jpg?raw=true" alt="Display App Blynk" width="600" height="900">
 </div>
 
 <br>
@@ -37,8 +39,8 @@ Display App Blynk
  <img src="https://github.com/MrArmiami/Project-install/blob/main/images/webblynk2.jpg?raw=true" alt="Display App Blynk" width="600" height="900">
 </div>
 <br>
+<h2>Display Web Blynk</h2>
 
-Display Web Blynk
 
 <br>
 <div align="center">
@@ -51,8 +53,9 @@ Display Web Blynk
 </div>
 <br>
 
+<h2>Chirpstack Ui Web interface</h2>
 
-Chirpstack Ui Web interface
+
 
 <br>
 <div align="center">
