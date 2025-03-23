@@ -2,7 +2,7 @@
 
 Data Flow Diagram this project
 
-<img src="https://github.com/MrArmiami/Project-install/blob/main/dataflowdiagram.jpg?raw=true" alt="Display Web Blynk" width="1000" height="400">
+<img src="https://github.com/MrArmiami/Project-install/blob/main/dataflowdiagram.jpg?raw=true" alt="Display Web Blynk" width="1200" height="400">
 
 
 
