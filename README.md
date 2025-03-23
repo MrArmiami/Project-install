@@ -1,6 +1,6 @@
 # Project-LORA-BASED ENVIRONMENTAL SURVEILLANCE SYSTEM FOR DURIAN ORCHARDS
 
 Display Web Blynk
-![Blynk](https://github.com/MrArmiami/Project-install/blob/main/webblynk.jpg?raw=true){width=300px}
+![Blynk](https://github.com/MrArmiami/Project-install/blob/main/webblynk.jpg?raw=true){width=100px}
 
 
