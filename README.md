@@ -10,6 +10,6 @@ Display Web Blynk
 
 
 <img src="https://github.com/MrArmiami/Project-install/blob/main/webblynk.jpg?raw=true" alt="Display Web Blynk" width="600" height="900">
-<img src="[https://github.com/MrArmiami/Project-install/blob/main/webblynk.jpg?raw=true](https://github.com/MrArmiami/Project-install/blob/main/webblynk2.jpg?raw=true)" alt="Display Web Blynk" width="600" height="900">
+<img src="https://github.com/MrArmiami/Project-install/blob/main/webblynk2.jpg?raw=true" alt="Display Web Blynk" width="600" height="900">
 
 https://github.com/MrArmiami/Project-install/blob/main/webblynk2.jpg?raw=true
