@@ -13,13 +13,13 @@ installation in durian orchard
 <div align="center">
 <br>
 Gateway
-  <img src="https://github.com/MrArmiami/Project-install/blob/main/images/Gateway.jpg?raw=true" alt="Display Web Blynk" width="600" height="900">
+  <img src="https://github.com/MrArmiami/Project-install/blob/main/images/Gateway.jpg?raw=true" alt="Gateway" width="1200" height="600">
 </div>
 <br>
 <div align="center">
 <br>
 LoRa Node 
-  <img src="https://github.com/MrArmiami/Project-install/blob/main/images/loranode.jpg?raw=true" alt="Display Web Blynk" width="600" height="900">
+  <img src="https://github.com/MrArmiami/Project-install/blob/main/images/loranode.jpg?raw=true" alt="LoRa Node " width="1200" height="600">
 </div>
 
 
@@ -29,12 +29,12 @@ Display App Blynk
 <br>
 <div align="center">
 <br>
-  <img src="https://github.com/MrArmiami/Project-install/blob/main/images/webblynk.jpg?raw=true" alt="Display Web Blynk" width="600" height="900">
+  <img src="https://github.com/MrArmiami/Project-install/blob/main/images/webblynk.jpg?raw=true" alt=Display App Blynk" width="600" height="900">
 </div>
 
 <br>
 <div align="center">
- <img src="https://github.com/MrArmiami/Project-install/blob/main/images/webblynk2.jpg?raw=true" alt="Display Web Blynk" width="600" height="900">
+ <img src="https://github.com/MrArmiami/Project-install/blob/main/images/webblynk2.jpg?raw=true" alt="Display App Blynk" width="600" height="900">
 </div>
 <br>
 
@@ -56,17 +56,20 @@ Chirpstack Ui Web interface
 
 <br>
 <div align="center">
-  <img src="https://github.com/MrArmiami/Project-install/blob/main/images/chripstack%20ui%20web%20interface2.png?raw=true" alt="Display Web Blynk" width="1200" height="600">
+  <img src="https://github.com/MrArmiami/Project-install/blob/main/images/chripstack%20ui%20web%20interface2.png?raw=true" alt="Chirpstack Ui Web interface
+" width="1200" height="600">
 </div>
 
 <br>
 <div align="center">
- <img src="https://github.com/MrArmiami/Project-install/blob/main/images/chripstack%20ui%20web%20interface3.png?raw=true" alt="Display Web Blynk" width="1200" height="600">
+ <img src="https://github.com/MrArmiami/Project-install/blob/main/images/chripstack%20ui%20web%20interface3.png?raw=true" alt="Chirpstack Ui Web interface
+" width="1200" height="600">
 </div>
 <br>
 
 <div align="center">
- <img src="https://github.com/MrArmiami/Project-install/blob/main/images/chripstack%20ui%20web%20interface.png?raw=true" alt="Display Web Blynk" width="1200" height="700">
+ <img src="https://github.com/MrArmiami/Project-install/blob/main/images/chripstack%20ui%20web%20interface.png?raw=true" alt="Chirpstack Ui Web interface
+" width="1200" height="700">
 </div>
 <br>
 
