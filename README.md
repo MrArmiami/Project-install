@@ -7,6 +7,23 @@ Data Flow Diagram this project
 
 
 <br>
+
+installation in durian orchard
+<br>
+<div align="center">
+<br>
+Gateway
+  <img src="https://github.com/MrArmiami/Project-install/blob/main/images/Gateway.jpg?raw=true" alt="Display Web Blynk" width="600" height="900">
+</div>
+<br>
+<div align="center">
+<br>
+LoRa Node 
+  <img src="https://github.com/MrArmiami/Project-install/blob/main/images/loranode.jpg?raw=true" alt="Display Web Blynk" width="600" height="900">
+</div>
+
+
+<br>
 Display App Blynk
 
 <br>
